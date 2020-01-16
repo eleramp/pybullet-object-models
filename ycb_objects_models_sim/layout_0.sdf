@@ -1,0 +1,197 @@
+<sdf version="1.6">
+  <world name="default">
+  <gravity>0 0 -9.8</gravity>
+	<model name="YcbBanana">
+      <pose frame=''>-0.196 0.11794 0.005 0 0 -2.9845</pose>
+      <link name="baselink">
+        <inertial>
+            <mass>0.066</mass>
+            <inertia>
+                <ixx>1e-3</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>1e-3</iyy>
+                <iyz>0</iyz>
+                <izz>1e-3</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbBanana/textured_simple_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+            <material>
+      				<ambient>1 1 1 1</ambient>
+      				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+      				<specular>.5 .5 .5 1</specular>
+      				<emissive>0 0 0 0</emissive>
+      			</material>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbBanana/textured_simple_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+        </collision>
+      </link>
+  	</model>
+    <model name="YcbMustardBottle">
+        <pose frame=''>-0.07479 0.161 0.08 0 0 1.9390639</pose>
+        <link name="baselink">
+          <inertial>
+			  <pose frame=''>0 0 -0.2 0 0 0</pose>
+              <mass>0.603</mass>
+              <inertia>
+                  <ixx>1e-3</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>1e-3</iyy>
+                  <iyz>0</iyz>
+                  <izz>1e-3</izz>
+              </inertia>
+          </inertial>
+          <visual name="visual">
+              <geometry>
+                  <mesh>
+                      <scale>1 1 1</scale>
+                      <uri>objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
+                  </mesh>
+              </geometry>
+              <material>
+        				<ambient>1 1 1 1</ambient>
+        				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+        				<specular>.5 .5 .5 1</specular>
+        				<emissive>0 0 0 0</emissive>
+        			</material>
+          </visual>
+          <collision name="collision">
+              <geometry>
+                  <mesh>
+                      <scale>1 1 1</scale>
+                      <uri>objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
+                  </mesh>
+              </geometry>
+          </collision>
+        </link>
+    	</model>
+      <model name="YcbPottedMeatCan">
+          <pose frame=''>-0.229 0.224 0.047 0 0 -1.7217114</pose>
+          <link name="baselink">
+            <inertial>
+				<pose frame=''>0 0 -0.2 0 0 0</pose>
+                <mass>0.370</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+      <model name="YcbGelatinBox">
+          <pose frame=''>-0.430 0.23849 0.01 0 0 0</pose>
+          <link name="baselink">
+            <inertial>
+                <mass>0.097</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbGelatinBox/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbGelatinBox/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+      <model name="YcbFoamBrick">
+          <pose frame=''>-0.374 0.13899 0.018 0 0 0</pose>
+          <link name="baselink">
+            <inertial>
+                <mass>0.028</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbFoamBrick/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbFoamBrick/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+  </world>
+</sdf>

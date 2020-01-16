@@ -1,0 +1,424 @@
+<sdf version="1.6">
+  <world name="default">
+  <gravity>0 0 -9.8</gravity>
+	<model name="YcbPear">
+      <pose frame=''>-0.2361526 0.11794 0.0 0.5355226 0 0</pose>
+      <link name="baselink">
+        <inertial>
+            <mass>0.049</mass>
+            <inertia>
+                <ixx>1e-3</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>1e-3</iyy>
+                <iyz>0</iyz>
+                <izz>1e-3</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbPear/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+            <material>
+      				<ambient>1 1 1 1</ambient>
+      				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+      				<specular>.5 .5 .5 1</specular>
+      				<emissive>0 0 0 0</emissive>
+      			</material>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbPear/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+        </collision>
+      </link>
+  	</model>
+	<model name="YcbChipsCan">
+      <pose frame=''>-0.19920 0.29439 0. 0 0 -1.7216858</pose>
+      <link name="baselink">
+        <inertial>
+            <mass>0.205</mass>
+            <inertia>
+                <ixx>1e-3</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>1e-3</iyy>
+                <iyz>0</iyz>
+                <izz>1e-3</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbChipsCan/textured.obj</uri>
+                </mesh>
+            </geometry>
+            <material>
+      				<ambient>1 1 1 1</ambient>
+      				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+      				<specular>.5 .5 .5 1</specular>
+      				<emissive>0 0 0 0</emissive>
+      			</material>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbChipsCan/textured.obj</uri>
+                </mesh>
+            </geometry>
+        </collision>
+      </link>
+  	</model>
+	<model name="YcbMediumClamp">
+      <pose frame=''>-0.33023 0.23849 0. 0 0 0</pose>
+      <link name="baselink">
+        <inertial>
+            <mass>0.059</mass>
+            <inertia>
+                <ixx>1e-3</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>1e-3</iyy>
+                <iyz>0</iyz>
+                <izz>1e-3</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbMediumClamp/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+            <material>
+      				<ambient>1 1 1 1</ambient>
+      				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+      				<specular>.5 .5 .5 1</specular>
+      				<emissive>0 0 0 0</emissive>
+      			</material>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbMediumClamp/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+        </collision>
+      </link>
+  	</model>
+	<model name="YcbTennisBall">
+      <pose frame=''>-0.1361526 0.05094 0. 0 0 -0.5236056</pose>
+      <link name="baselink">
+        <inertial>
+            <mass>0.058</mass>
+            <inertia>
+                <ixx>1e-3</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>1e-3</iyy>
+                <iyz>0</iyz>
+                <izz>1e-3</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbTennisBall/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+            <material>
+      				<ambient>1 1 1 1</ambient>
+      				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+      				<specular>.5 .5 .5 1</specular>
+      				<emissive>0 0 0 0</emissive>
+      			</material>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbTennisBall/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+        </collision>
+      </link>
+  	</model>
+	<model name="YcbStrawberry">
+      <pose frame=''>-0.1561526 0.20094 0. 0 0 -0.5236056</pose>
+      <link name="baselink">
+        <inertial>
+            <mass>0.018</mass>
+            <inertia>
+                <ixx>1e-3</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>1e-3</iyy>
+                <iyz>0</iyz>
+                <izz>1e-3</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbStrawberry/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+            <material>
+      				<ambient>1 1 1 1</ambient>
+      				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+      				<specular>.5 .5 .5 1</specular>
+      				<emissive>0 0 0 0</emissive>
+      			</material>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <scale>1 1 1</scale>
+                    <uri>objects/YcbStrawberry/textured_reoriented.obj</uri>
+                </mesh>
+            </geometry>
+        </collision>
+      </link>
+  	</model>
+    <model name="YcbMasterChefCan">
+        <pose frame=''>-0.0547969 0.161169 0.07 0 0 -1.4993633</pose>
+        <link name="baselink">
+          <inertial>
+              <mass>0.404</mass>
+              <inertia>
+                  <ixx>1e-3</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>1e-3</iyy>
+                  <iyz>0</iyz>
+                  <izz>1e-3</izz>
+              </inertia>
+          </inertial>
+          <visual name="visual">
+              <geometry>
+                  <mesh>
+                      <scale>1 1 1</scale>
+                      <uri>objects/YcbMasterChefCan/textured_simple_reoriented.obj</uri>
+                  </mesh>
+              </geometry>
+              <material>
+        				<ambient>1 1 1 1</ambient>
+        				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+        				<specular>.5 .5 .5 1</specular>
+        				<emissive>0 0 0 0</emissive>
+        			</material>
+          </visual>
+          <collision name="collision">
+              <geometry>
+                  <mesh>
+                      <scale>1 1 1</scale>
+                      <uri>objects/YcbMasterChefCan/textured_simple_reoriented.obj</uri>
+                  </mesh>
+              </geometry>
+          </collision>
+        </link>
+    	</model>
+    <model name="YcbScissors">
+        <pose frame=''>-0.37456 0.13899 -0.08 0 0 0.5236056</pose>
+        <link name="baselink">
+          <inertial>
+              <mass>0.082</mass>
+              <inertia>
+                  <ixx>1e-3</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>1e-3</iyy>
+                  <iyz>0</iyz>
+                  <izz>1e-3</izz>
+              </inertia>
+          </inertial>
+          <visual name="visual">
+              <geometry>
+                  <mesh>
+                      <scale>1 1 1</scale>
+                      <uri>objects/YcbScissors/textured_simple_reoriented.obj</uri>
+                  </mesh>
+              </geometry>
+              <material>
+        				<ambient>1 1 1 1</ambient>
+        				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+        				<specular>.5 .5 .5 1</specular>
+        				<emissive>0 0 0 0</emissive>
+        			</material>
+          </visual>
+          <collision name="collision">
+              <geometry>
+                  <mesh>
+                      <scale>1 1 1</scale>
+                      <uri>objects/YcbScissors/textured_simple_reoriented.obj</uri>
+                  </mesh>
+              </geometry>
+          </collision>
+        </link>
+    	</model>
+      <model name="YcbPowerDrill">
+          <pose frame=''>-0.47456 0.25899 0. 0 0 -0.5236056</pose>
+          <link name="baselink">
+            <inertial>
+                <mass>0.895</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbPowerDrill/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbPowerDrill/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+      <model name="YcbPottedMeatCan">
+          <pose frame=''>-0.3561526 0.02094 0.047 0 0 -0.5236056</pose>
+          <link name="baselink">
+            <inertial>
+				<pose frame=''>0 0 -0.2 0 0 0</pose>
+                <mass>0.370</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+      <model name="YcbTomatoSoupCan">
+          <pose frame=''>-0.4861526 0.02094 0.06 0 0 -0.5236056</pose>
+          <link name="baselink">
+            <inertial>
+                <mass>0.349</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbTomatoSoupCan/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbTomatoSoupCan/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+      <model name="YcbMustardBottle">
+          <pose frame=''>-0.0361526 0.29094 0.08 0 0 -1.5707963</pose>
+          <link name="baselink">
+            <inertial>
+                <mass>0.603</mass>
+                <inertia>
+                    <ixx>1e-3</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>1e-3</iyy>
+                    <iyz>0</iyz>
+                    <izz>1e-3</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                  <ambient>1 1 1 1</ambient>
+                  <diffuse>1.00000 1.00000 1.000000 1</diffuse>
+                  <specular>.5 .5 .5 1</specular>
+                  <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+          </link>
+      </model>
+  </world>
+</sdf>
