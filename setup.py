@@ -16,7 +16,7 @@ for root, dirs, files in os.walk(hh):
       need_files.append(fn[1 + len(hh):])
 
 setup(
-  name="ycb-objects-models-sim",
+  name="ycb_objects_models_sim",
   version="0.1",
   author="Elena Rampone",
   author_email="elena.rampone@iit.it",
