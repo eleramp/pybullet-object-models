@@ -43,7 +43,6 @@
         <pose frame=''>-0.07479 0.161 0.08 0 0 1.9390639</pose>
         <link name="baselink">
           <inertial>
-			  <pose frame=''>0 0 -0.2 0 0 0</pose>
               <mass>0.603</mass>
               <inertia>
                   <ixx>1e-3</ixx>
