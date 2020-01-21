@@ -15,8 +15,12 @@ for root, dirs, files in os.walk(hh):
       fn = root + "/" + fn
       need_files.append(fn[1 + len(hh):])
 
+
+print("find_packages() \n {}".format(find_packages()))
+print("find_packages() \n {}".format(find_packages('ycb_objects_models_sim')))
+
 setup(
-  name="ycb_objects_models_sim",
+  name="ycb-objects-models-sim",
   version="0.1",
   author="Elena Rampone",
   author_email="elena.rampone@iit.it",
@@ -24,6 +28,7 @@ setup(
   license="LGPL",
   python_requires='>=3.5',
   keywords="urdf sdf models ycb objects simulation pybullet",
+  package_dir={'': '.'},
   packages=find_packages(),
   package_data={'ycb_objects_models_sim': need_files},
   url="https://github.com/eleramp/ycb-objects-models-sim",
