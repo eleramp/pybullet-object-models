@@ -19,7 +19,7 @@
     </visual>
     <collision>
       <geometry>
-    	 	<mesh filename="textured_simple_reoriented.obj" scale="1 1 1"/>
+    	 	<mesh filename="collision_vhacd.obj" scale="1 1 1"/>
       </geometry>
     </collision>
   </link>
