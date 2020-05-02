@@ -3,13 +3,13 @@
   <link name="baseLink">
     <contact>
       <friction_anchor/>
-      <lateral_friction value="1.0"/>
+      <lateral_friction value="0.6"/>
       <rolling_friction value="0.0"/>
       <contact_cfm value="0.0"/>
       <contact_erp value="1.0"/>
     </contact>
     <inertial>
-       <origin rpy="0 0 0" xyz="0 0.01 0"/>
+       <origin rpy="0 0 -0.5" xyz="0 0.012 -0.01"/>
        <mass value=".370"/>
        <inertia ixx="1e-3" ixy="0" ixz="0" iyy="1e-3" iyz="0" izz="1e-3"/>
     </inertial>

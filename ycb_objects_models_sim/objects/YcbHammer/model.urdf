@@ -9,12 +9,13 @@
       <contact_erp value="1.0"/>
     </contact>
     <inertial>
+       <origin rpy="0 0 0.0" xyz="0.02 -0.01 0.01"/>
        <mass value=".665"/>
        <inertia ixx="1e-3" ixy="0" ixz="0" iyy="1e-3" iyz="0" izz="1e-3"/>
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="textured_simple_reoriented.obj" scale="1 1 1"/>
+        <mesh filename="textured_reoriented.obj" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
