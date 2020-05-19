@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup_py_dir = os.path.dirname(os.path.realpath(__file__))
 need_files = []
-datadir = "ycb_objects_models_sim"
+datadir = "pybullet_object_models"
 
 hh = setup_py_dir + "/" + datadir
 
@@ -20,16 +20,16 @@ print("find_packages() \n {}".format(find_packages()))
 print("find_packages() \n {}".format(find_packages('ycb_objects_models_sim')))
 
 setup(
-  name="ycb-objects-models-sim",
+  name="pybullet-object-models",
   version="0.1",
   author="Elena Rampone",
   author_email="elena.rampone@iit.it",
   description="URDF-SDF models of textured YCB objects for simulation",
   license="LGPL",
-  python_requires='>=3.5',
-  keywords="urdf sdf models ycb objects simulation pybullet",
+  python_requires='>=3',
+  keywords="urdf sdf model object simulation pybullet",
   package_dir={'': '.'},
   packages=find_packages(),
-  package_data={'ycb_objects_models_sim': need_files},
-  url="https://github.com/eleramp/ycb-objects-models-sim",
+  package_data={'pybullet_object_models': need_files},
+  url="https://github.com/eleramp/pybullet-object-models",
 )
