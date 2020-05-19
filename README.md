@@ -39,7 +39,7 @@ $ conda activate env_pygalmesh
 $ conda install -c conda-forge pygalmesh
 ```
 
-Installing this tool via conda is not probably the ideal option but it is the best and easiest way at the moment, as pointed out in the [github repo](https://github.com/nschloe/pygalmesh).
+Installing this tool via conda is not probably the ideal option but it is the best and easiest way at the moment, as pointed out in its [github repo](https://github.com/nschloe/pygalmesh).
 
 ## Usage
 
