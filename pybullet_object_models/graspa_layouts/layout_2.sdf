@@ -27,7 +27,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbPear/textured_reoriented.obj</uri>
+                    <uri>../ycb_objects/YcbPear/textured_reoriented.obj</uri>
                 </mesh>
             </geometry>
             <material>
@@ -41,7 +41,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbPear/collision_vhacd.obj</uri>
+                    <uri>../ycb_objects/YcbPear/collision_vhacd.obj</uri>
                 </mesh>
             </geometry>
         </collision>
@@ -73,7 +73,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbChipsCan/textured.obj</uri>
+                    <uri>../ycb_objects/YcbChipsCan/textured.obj</uri>
                 </mesh>
             </geometry>
             <material>
@@ -87,7 +87,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbChipsCan/collision_vhacd.obj</uri>
+                    <uri>../ycb_objects/YcbChipsCan/collision_vhacd.obj</uri>
                 </mesh>
             </geometry>
         </collision>
@@ -119,7 +119,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbMediumClamp/textured_reoriented.obj</uri>
+                    <uri>../ycb_objects/YcbMediumClamp/textured_reoriented.obj</uri>
                 </mesh>
             </geometry>
             <material>
@@ -133,7 +133,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbMediumClamp/collision_vhacd.obj</uri>
+                    <uri>../ycb_objects/YcbMediumClamp/collision_vhacd.obj</uri>
                 </mesh>
             </geometry>
         </collision>
@@ -165,7 +165,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbTennisBall/textured_reoriented.obj</uri>
+                    <uri>../ycb_objects/YcbTennisBall/textured_reoriented.obj</uri>
                 </mesh>
             </geometry>
             <material>
@@ -179,7 +179,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbTennisBall/collision_vhacd.obj</uri>
+                    <uri>../ycb_objects/YcbTennisBall/collision_vhacd.obj</uri>
                 </mesh>
             </geometry>
         </collision>
@@ -211,7 +211,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbStrawberry/textured_reoriented.obj</uri>
+                    <uri>../ycb_objects/YcbStrawberry/textured_reoriented.obj</uri>
                 </mesh>
             </geometry>
             <material>
@@ -225,7 +225,7 @@
             <geometry>
                 <mesh>
                     <scale>1 1 1</scale>
-                    <uri>/objects/YcbStrawberry/collision_vhacd.obj</uri>
+                    <uri>../ycb_objects/YcbStrawberry/collision_vhacd.obj</uri>
                 </mesh>
             </geometry>
         </collision>
@@ -257,7 +257,7 @@
               <geometry>
                   <mesh>
                       <scale>1 1 1</scale>
-                      <uri>/objects/YcbMasterChefCan/textured_simple_reoriented.obj</uri>
+                      <uri>../ycb_objects/YcbMasterChefCan/textured_simple_reoriented.obj</uri>
                   </mesh>
               </geometry>
               <material>
@@ -271,7 +271,7 @@
               <geometry>
                   <mesh>
                       <scale>1 1 1</scale>
-                      <uri>/objects/YcbMasterChefCan/collision_vhacd.obj</uri>
+                      <uri>../ycb_objects/YcbMasterChefCan/collision_vhacd.obj</uri>
                   </mesh>
               </geometry>
           </collision>
@@ -303,7 +303,7 @@
               <geometry>
                   <mesh>
                       <scale>1 1 1</scale>
-                      <uri>/objects/YcbScissors/textured_simple_reoriented.obj</uri>
+                      <uri>../ycb_objects/YcbScissors/textured_simple_reoriented.obj</uri>
                   </mesh>
               </geometry>
               <material>
@@ -317,7 +317,7 @@
               <geometry>
                   <mesh>
                       <scale>1 1 1</scale>
-                      <uri>/objects/YcbScissors/collision_vhacd.obj</uri>
+                      <uri>../ycb_objects/YcbScissors/collision_vhacd.obj</uri>
                   </mesh>
               </geometry>
           </collision>
@@ -349,7 +349,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbPowerDrill/textured_simple_reoriented.obj</uri>
+                        <uri>../ycb_objects/YcbPowerDrill/textured_simple_reoriented.obj</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -363,7 +363,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbPowerDrill/collision_vhacd.obj</uri>
+                        <uri>../ycb_objects/YcbPowerDrill/collision_vhacd.obj</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -395,7 +395,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
+                        <uri>../ycb_objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -409,7 +409,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbPottedMeatCan/collision_vhacd.obj</uri>
+                        <uri>../ycb_objects/YcbPottedMeatCan/collision_vhacd.obj</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -441,7 +441,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbTomatoSoupCan/textured_simple_reoriented.obj</uri>
+                        <uri>../ycb_objects/YcbTomatoSoupCan/textured_simple_reoriented.obj</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -455,7 +455,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbTomatoSoupCan/collision_vhacd.obj</uri>
+                        <uri>../ycb_objects/YcbTomatoSoupCan/collision_vhacd.obj</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -487,7 +487,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
+                        <uri>../ycb_objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -501,7 +501,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>/objects/YcbMustardBottle/collision_vhacd.obj</uri>
+                        <uri>../ycb_objects/YcbMustardBottle/collision_vhacd.obj</uri>
                     </mesh>
                 </geometry>
             </collision>

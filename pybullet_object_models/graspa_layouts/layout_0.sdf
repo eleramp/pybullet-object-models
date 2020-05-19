@@ -26,7 +26,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbBanana/textured_simple_reoriented.obj</uri>
+              <uri>../ycb_objects/YcbBanana/textured_simple_reoriented.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -40,7 +40,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbBanana/collision_vhacd.obj</uri>
+              <uri>../ycb_objects/YcbBanana/collision_vhacd.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -72,7 +72,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
+              <uri>../ycb_objects/YcbMustardBottle/textured_simple_reoriented.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -86,7 +86,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbMustardBottle/collision_vhacd.obj</uri>
+              <uri>../ycb_objects/YcbMustardBottle/collision_vhacd.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -117,7 +117,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
+              <uri>../ycb_objects/YcbPottedMeatCan/textured_simple_reoriented.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -131,7 +131,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbPottedMeatCan/collision_vhacd.obj</uri>
+              <uri>../ycb_objects/YcbPottedMeatCan/collision_vhacd.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -162,7 +162,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbGelatinBox/textured_simple_reoriented.obj</uri>
+              <uri>../ycb_objects/YcbGelatinBox/textured_simple_reoriented.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -176,7 +176,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbGelatinBox/collision_vhacd.obj</uri>
+              <uri>../ycb_objects/YcbGelatinBox/collision_vhacd.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -207,7 +207,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbFoamBrick/textured_simple_reoriented.obj</uri>
+              <uri>../ycb_objects/YcbFoamBrick/textured_simple_reoriented.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -221,7 +221,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/objects/YcbFoamBrick/collision_vhacd.obj</uri>
+              <uri>../ycb_objects/YcbFoamBrick/collision_vhacd.obj</uri>
             </mesh>
           </geometry>
         </collision>
