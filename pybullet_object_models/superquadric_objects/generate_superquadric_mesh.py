@@ -1,34 +1,35 @@
+import os
 import pygalmesh
 import meshio
 
-params = [1,1,1,1,1]
+shape_values = [i/10 for i in range(1,20,2)]
 
-l1 = params[0]
-l2 = params[1]
-l3 = params[2]
-l4 = params[3]
-l5 = params[4]
+for l5 in shape_values:
+    for l4 in shape_values:
 
-file_name = "sq_" + str(l1) + "_" + str(l2) + "_" + str(l3) + "_" + str(l4) + "_" + str(l5) + ".obj"
+        l1 = l2 = l3 = 1
 
-class SQ(pygalmesh.DomainBase):
-    def __init__(self):
-        super().__init__()
+        obj_dir = "sq_" + str(l1) + "_" + str(l2) + "_" + str(l3) + "_" + str(l4) + "_" + str(l5)
+        os.makedirs(obj_dir, exist_ok=True)
 
-    def eval(self, x):
-        return (( (x[0] / l1) ** 2) ** (1/l5) + ( (x[1] / l2) ** 2) ** (1/l5) )** (l5/l4) \
-                + ( (x[2] / l3) ** 2) ** (1/l4) - 1
+        class SQ(pygalmesh.DomainBase):
+            def __init__(self):
+                super().__init__()
 
-    def get_bounding_sphere_squared_radius(self):
-        return 10
+            def eval(self, x):
+                return (( (x[0] / l1) ** 2) ** (1/l5) + ( (x[1] / l2) ** 2) ** (1/l5) )** (l5/l4) \
+                        + ( (x[2] / l3) ** 2) ** (1/l4) - 1
 
-d = SQ()
+            def get_bounding_sphere_squared_radius(self):
+                return 10
 
-mesh = pygalmesh.generate_surface_mesh(
-    d,
-    angle_bound=10,
-    radius_bound=0.05,
-    distance_bound=0.05
-)
+        d = SQ()
 
-meshio.write(file_name, mesh)
+        mesh = pygalmesh.generate_surface_mesh(
+            d,
+            angle_bound=10,
+            radius_bound=0.05,
+            distance_bound=0.05
+        )
+
+        meshio.write(os.path.join(obj_dir, "model.obj"), mesh)
