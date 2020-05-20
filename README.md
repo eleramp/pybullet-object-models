@@ -130,7 +130,7 @@ We provide information about how to generate custom objects by using the pygalme
 
 The output meshes have a superquadric shape defined according to the `inside-outside` function:
 ```
-F = (( (x / λ1) ** (2/λ5) + ( (y / λ2) ** (2/λ5) )** (λ5/λ4) + ( (z / λ3) ** (2/λ4)
+F = ( (x / λ1) ** (2/λ5) + (y / λ2) ** (2/λ5) ) ** (λ5/λ4) + (z / λ3) ** (2/λ4)
 ```
 By default, the `generate_superquadric_mesh.py` creates 100 superquadric meshes, with `λ4, λ5` varying in the range `(0.1, 1.9, step = 0.2)`
 
