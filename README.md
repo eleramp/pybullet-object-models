@@ -18,7 +18,7 @@ Each object has the following files:
 
   - URDF file to load the object into the simulation.
 
-Furthermore, there are three SDF files, each loading some YCB objects arranged according to a specific layout. The layouts reproduce the layouts of the [GRASPA-benchmark](https://github.com/robotology/GRASPA-benchmark).
+Furthermore, there are 3 SDF files, each loading some YCB objects arranged according to a specific layout. The layouts reproduce the layouts of the [GRASPA-benchmark](https://github.com/robotology/GRASPA-benchmark).
 
 ## Setup
 
@@ -70,26 +70,29 @@ path_to_urdf = os.path.join(ycb_objects.getDataPath(), obj_name, "model.urdf")
 Here is a Python example to load the objects inside the pybullet simulation:
 
 ```python
+import os
+import time
 import pybullet as p
 import pybullet_data
 from pybullet_object_models import ycb_objects
 
 # Open GUI and set pybullet_data in the path
     p.connect(p.GUI)
-    p.resetDebugVisualizerCamera(1, 90, 0, [0.0, -0.0, -0.0])
+    p.resetDebugVisualizerCamera(3, 90, -30, [0.0, -0.0, -0.0])
     p.setTimeStep(1 / 240.)
 
     # Load plane contained in pybullet_data
     planeId = p.loadURDF(os.path.join(pybullet_data.getDataPath(), "plane.urdf"))
 
-    # Set gravity for simulation
+    flags = p.URDF_USE_INERTIA_FROM_FILE
+    obj_id = p.loadURDF(os.path.join(ycb_objects.getDataPath(), 'YcbBanana', "model.urdf"), [1., 0.0, 0.8], flags=flags)
+
     p.setGravity(0, 0, -9.8)
 
-    flags = p.URDF_ENABLE_CACHED_GRAPHICS_SHAPES | p.URDF_USE_SELF_COLLISION | p.URDF_USE_INERTIA_FROM_FILE
-
-    obj_id = p.loadURDF(os.path.join(ycb_objects.getDataPath(), 'YcbBanana', "model.urdf"), [1., 0.0, 0.8])
+    while 1:
+        p.stepSimulation()
+        time.sleep(1./240)
 ```
-
 
 ### Generate objects with pygalmesh
 We provide information about how to generate custom objects by using the pygalmesh tool.
