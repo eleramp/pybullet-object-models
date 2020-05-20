@@ -97,4 +97,41 @@ from pybullet_object_models import ycb_objects
 ### Generate objects with pygalmesh
 We provide information about how to generate custom objects by using the pygalmesh tool.
 
-TODO.
+1. Navigate to the `superquadric_objects` folder:
+   ```bash
+   $ cd pybullet-object-models/pybullet_object_models/superquadric_objects/
+   ```
+
+2. Activate the conda pygalmesh environment:
+  ```bash
+  $ conda activate /path/to/env_pygalmesh
+  ```
+
+3. Run the script to generate the meshes:
+  ```bash
+  $ python generate_superquadric_mesh.py
+  ```
+  The output meshes are saved according to the following tree:
+  ```bash
+  sq_l1_l2_l3_l4_l5/
+  └── model.obj
+  ```
+4. Run the script to generate the URDF model for each new superquadric object:
+  ```
+  $ python generate_urdf_model.py
+  ```
+  They are saved inside each superquadric object folder as follow:
+  ```bash
+  sq_l1_l2_l3_l4_l5/
+  ├── model.obj
+  └── model.urdf
+  ```
+<br>
+
+The output meshes have a superquadric shape defined according to the `inside-outside` function:
+```
+F = (( (x / λ1) ** (2/λ5) + ( (y / λ2) ** (2/λ5) )** (λ5/λ4) + ( (z / λ3) ** (2/λ4)
+```
+By default, the `generate_superquadric_mesh.py` creates 100 superquadric meshes, with `λ4, λ5` varying in the range `(0.1, 1.9, step = 0.2)`
+
+You can of course modify the script to reduce the number of generated superquadric meshes as you like.
