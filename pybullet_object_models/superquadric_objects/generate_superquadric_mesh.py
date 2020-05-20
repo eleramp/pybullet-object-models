@@ -2,12 +2,16 @@ import os
 import pygalmesh
 import meshio
 
+import time
+
+t0 = time.time()
+
 shape_values = [i/10 for i in range(1,20,2)]
 
 for l5 in shape_values:
     for l4 in shape_values:
 
-        l1 = l2 = l3 = 1
+        l1 = l2 = l3 = 0.25
 
         obj_dir = "sq_" + str(l1) + "_" + str(l2) + "_" + str(l3) + "_" + str(l4) + "_" + str(l5)
         os.makedirs(obj_dir, exist_ok=True)
@@ -21,15 +25,19 @@ for l5 in shape_values:
                         + ( (x[2] / l3) ** 2) ** (1/l4) - 1
 
             def get_bounding_sphere_squared_radius(self):
-                return 10
+                return 0.5
 
         d = SQ()
 
         mesh = pygalmesh.generate_surface_mesh(
             d,
-            angle_bound=10,
-            radius_bound=0.05,
-            distance_bound=0.05
+            angle_bound=30,
+            radius_bound=0.015,
+            distance_bound=0.01
         )
 
         meshio.write(os.path.join(obj_dir, "model.obj"), mesh)
+
+t1 = time.time()
+
+print("elapsed time {}".format(round(t1 - t0, 4)))
