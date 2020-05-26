@@ -3,7 +3,7 @@
   <link name="baseLink">
     <contact>
       <friction_anchor/>
-      <lateral_friction value="0.6"/>
+      <lateral_friction value="0.8"/>
       <rolling_friction value="0.001"/>
       <spinning_friction value="0.001"/>
       <contact_cfm value="0.0"/>
@@ -18,6 +18,9 @@
       <geometry>
         <mesh filename="textured_simple_reoriented.obj" scale="1 1 1"/>
       </geometry>
+      <material name="white">
+        <color rgba="1. 1. 1. 1."/>
+      </material>
     </visual>
     <collision>
       <geometry>
