@@ -44,16 +44,17 @@ shape_values = [i/10 for i in range(1, 20, 2)]
 min_dim, max_dim = 0.02, 0.12
 max_grasp_dim = 0.04
 
-dim_values = [i/100 for i in range(int(min_dim*100), int(max_dim*100), 2)]
+dim_values = [i/100 for i in range(int(min_dim*100), int(max_dim*100))]
 
 max_grasp_dim_idx = dim_values.index(max_grasp_dim)
 
+count = 0
 for l5 in shape_values:
     for l4 in shape_values:
         for l1 in dim_values:
-            for l2 in dim_values[:max_grasp_dim_idx]:
+            for l2 in dim_values[:max_grasp_dim_idx+1]:
                 for l3 in dim_values:
-
+                    count += 1
                     # setup dirs
                     obj_dir = "sq_" + str(l1) + "_" + str(l2) + "_" + str(l3) + "_" + str(l4) + "_" + str(l5)
                     mesh_dir = "sq_" + str(max_dim) + "_" + str(max_dim) + "_" + str(max_dim) + "_" + str(l4) + "_" + str(l5)
@@ -70,6 +71,8 @@ for l5 in shape_values:
                         f = open(os.path.join(obj_dir,"model.urdf"), 'w')
                         f.write(urdf_str)
                         print("urdf model saved in {}".format(os.path.join(obj_dir,"model.urdf")))
-                        
+
                     except Exception:
                         print("Error: cannot save urdf file at {}".format(os.path.join(obj_dir,"model.urdf")))
+
+print("count {}".format(count))
