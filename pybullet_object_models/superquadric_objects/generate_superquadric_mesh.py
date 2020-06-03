@@ -1,6 +1,7 @@
 import os
 import pygalmesh
 import meshio
+import trimesh
 
 import time
 
@@ -12,7 +13,7 @@ l1 = l2 = l3 = 0.12
 for l5 in shape_values:
     for l4 in shape_values:
 
-        obj_dir = "sq_" + str(l1) + "_" + str(l2) + "_" + str(l3) + "_" + str(l4) + "_" + str(l5)
+        obj_dir = "../inverted_mesh/sq_" + str(l1) + "_" + str(l2) + "_" + str(l3) + "_" + str(l4) + "_" + str(l5)
         os.makedirs(obj_dir, exist_ok=True)
 
         class SQ(pygalmesh.DomainBase):
@@ -35,7 +36,15 @@ for l5 in shape_values:
             distance_bound=0.005
         )
 
-        meshio.write(os.path.join(obj_dir, "model.obj"), mesh)
+        meshio.write(os.path.join(obj_dir, "model.stl"), mesh, file_format="stl")
+
+        # check normal issue with trimesh
+        mesh_1 = trimesh.load_mesh(os.path.join(obj_dir, "model.stl"))
+        mesh_1.show()
+        cmd = input("invert?y/n")
+        if cmd == 'y':
+            mesh_1.invert()
+        mesh_1.export(os.path.join(obj_dir, "model.obj"))
 
 t1 = time.time()
 

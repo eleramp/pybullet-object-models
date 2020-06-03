@@ -3,5 +3,5 @@ __pycache__
 *.bak
 *.swp
 *.idea
-
+*.pkl
 sq_*/
