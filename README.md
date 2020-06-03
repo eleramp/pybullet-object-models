@@ -37,6 +37,7 @@ If you want to generate your own object models by using the [pygalmesh tool](htt
 $ conda create -n env_pygalmesh python=3.8
 $ conda activate env_pygalmesh
 $ conda install -c conda-forge pygalmesh
+$ pip install trimesh #this is used to interactively fix a bug in the generated meshes, related to the inverted surface normals
 ```
 
 Using conda to install the tool is not probably the ideal option for some people but it is the best and easiest way at the moment, as pointed out in its [github repo](https://github.com/nschloe/pygalmesh).
