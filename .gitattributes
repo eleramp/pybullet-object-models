@@ -1,0 +1,1 @@
+pybullet_object_models/superquadric_objects/sq_*/*.obj filter=lfs diff=lfs merge=lfs -text
