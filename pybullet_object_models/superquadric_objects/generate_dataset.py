@@ -3,11 +3,11 @@ import pickle
 import numpy as np
 
 # Generate names of directories of superquadric models
-shape_values = [i/10 for i in range(1, 20, 2)]
+shape_values = [i/10. for i in range(1, 20, 2)]
 
 min_dim, max_dim = 0.02, 0.12
 max_grasp_dim = 0.04
-dim_values = [i/100 for i in range(int(min_dim*100), int(max_dim*100))]
+dim_values = [i/100. for i in range(int(min_dim*100), int(max_dim*100))]
 
 max_grasp_dim_idx = dim_values.index(max_grasp_dim)
 
